@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --text-color01: white;
+    --text-color02: black;
+    --text-color03: rgba(255, 255, 255, 0.637);
+    --fundo-color01: rgb(10, 10, 10);
+    --fundo-color02: rgb(46, 45, 45); 
+    --fundo-color03: rgb(61, 60, 60);
+    --font-padrao: "Roboto", sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: var(--font-padrao);
+}
+
+.menu-header {
+    height: 60px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    background-color: var(--fundo-color01);
+}
+
+/* -----------------------*/
+
+.spotify-icon {
+    /* margin-top: 1rem; */
+    margin-left: 1.5rem;
+    color: var(--text-color01);
+    text-decoration: none;
+}
+
+.spotify-icon i {
+    font-size: 2.1rem;
+}
+
+/* -----------------------*/
+
+.navegacao {
+    height: 30px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 5px;
+    border-radius: 30px;
+    background-color: var(--fundo-color02);
+    transition: all 0.3s ease;
+}
+
+.navegacao:hover {
+    background-color: var(--fundo-color03);
+}
+
+.navegacao label i {
+    margin-left: 10px;
+    cursor: pointer;
+    color: var(--text-color03);
+}
+
+.navegacao input {
+    border: none;
+    outline: none;
+    color: var(--text-color01);
+    background-color: transparent;
+}
+
+.navegacao input::placeholder {
+    color: var(--text-color03);
+    font-size: 0.9rem;
+}
+
+/* -----------------------*/
+
+.trocar-secao {
+    display: flex;
+    gap: 20px;
+}
+
+.item01 {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    /* background-color: red; */
+}
+
+.item01 i {
+    text-align: center;
+    align-content: center;
+    font-size: 1.2rem;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    color: var(--text-color03);
+    background-color: var(--fundo-color02);
+}
+
+.item01 i:hover {
+    transform: translate(1px) scale(1.05);
+    color: var(--text-color01);
+    background-color: var(--fundo-color03);
+}
+
+/* -----------------------*/
+
+.opcoes01 {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 15px;
+}
+
+.opcoes01 a {
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--text-color03);
+}
+
+.opcoes01 a:hover {
+    transform: translate(1px) scale(1.1);
+    color: var(--text-color01);
+}
+
+/* -----------------------*/
+
+.opcoes02 {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 15px;
+}
+
+.opcoes02 a {
+    color: var(--text-color03);
+    text-decoration: none;
+}
+
+.opcoes02 a:hover {
+    transform: translate(1px) scale(1.1);
+    color: var(--text-color01);
+}
+
+/* -----------------------*/
+
+.header-botao {
+    margin-right: 1.5rem;
+    height: 35px;
+    width: 100px;
+    border: none;
+    font-weight: 600;
+    font-size: 1rem;
+    border-radius: 30px;
+    color: var(--fundo-color02);
+    background: linear-gradient(to right, var(--text-color01), rgb(180, 180, 180));
+    transition: all 0.3s ease;
+}
+
+.header-botao:hover {
+    transform: translate(1px) scale(1);
+    background: linear-gradient(to right, rgb(180, 180, 180), var(--text-color01));
+
+}
+
+
