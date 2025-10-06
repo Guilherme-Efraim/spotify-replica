@@ -69,6 +69,7 @@ body {
 }
 
 .navegacao input {
+    width: 100%;
     border: none;
     outline: none;
     color: var(--text-color01);
@@ -328,7 +329,7 @@ body {
     margin-right: 7px;
     grid-column: 2 / 4;
     grid-row: 1 / 3;
-    padding: 1rem;
+    /* padding: 1rem; */
     border-radius: 5px;
     overflow-x: auto;
     scrollbar-width: none;
@@ -345,9 +346,9 @@ body {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
-    margin-top: 1rem;
-    margin-left: 0.7rem;
-    margin-right: 0.7rem;
+    margin-top: 1.6rem;
+    margin-left: 2.1rem;
+    margin-right: 2.1rem;
     margin-bottom: 0.8rem;
 }
 
@@ -373,6 +374,7 @@ body {
 }
 
 .conteudo-scroll-bar {
+    padding-left: 1.4rem;
     display: flex;
     flex-flow: row nowrap;
     gap: 10px;
@@ -433,9 +435,13 @@ body {
 /* -----------------------*/
 
 .rodape {
+    margin: 1rem;
+    padding-top: 3rem;
+    padding-bottom: 1.5rem;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
+    border-top: 1px solid rgba(255, 255, 255, 0.151);
 }
 
 .rodape-titulos {
@@ -447,11 +453,11 @@ body {
     display: flex;
     flex-flow: row nowrap;
     gap: 20px;
-    margin-left: 0.7rem;
+    margin-left: 1rem;
 }
 
 .informacoes ul {
-    margin-right: 2rem;
+    margin-right: 3rem;
     list-style: none;
 }
 
@@ -459,7 +465,7 @@ body {
     line-height: 2rem;
     color: var(--text-color03);
     text-decoration: none;
-    transition: all 0.2s;
+    /* transition: all 0.2s; */
 }
 
 .informacoes ul li a:hover {
@@ -468,8 +474,47 @@ body {
 }
 
 .redes-sociais {
-    margin-right: 0.7rem;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    margin-right: 2.5rem;
+    /* background-color: yellow; */
 }
+
+.redes-sociais a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: var(--fundo-color03);
+}
+
+.redes-sociais a:hover {
+    background-color: rgba(255, 255, 255, 0.315);
+}
+
+.redes-sociais a i {
+    font-size: 1.2rem;
+}
+
+.spotify {
+    /* background-color: var(--fundo-color03); */
+    margin: 1rem;
+    padding-left: 0.7rem;
+    padding-top: 2.3rem;
+    padding-bottom: 1.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.151);
+}
+
+.spotify p {
+    color: var(--text-color03);
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
 
 
 
